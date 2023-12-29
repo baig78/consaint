@@ -1,0 +1,51 @@
+/* HeroSection.css */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.enqurebtn {
+  background: #006cb7;
+  margin-right: 10px;
+}
+.enqurebtn:hover {
+  background-color: #006cb7;
+}
+.contactbtn {
+  background: #000;
+}
+.contactbtn:hover {
+  background: #000;
+}
+
+/* Add responsive styles for smaller screens if needed */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container,
+  .image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
