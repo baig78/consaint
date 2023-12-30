@@ -8,11 +8,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar
-      expand="lg"
-      sticky="top"
-      className="shadow p-3 mb-5 bg-body rounded"
-    >
+    <Navbar expand="lg" sticky="top" className="shadow p-3 mb-5 bg-body ">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} className="site-logo" alt="consaint" />

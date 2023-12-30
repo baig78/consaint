@@ -48,4 +48,57 @@ img {
     max-width: 100%;
     margin-bottom: 20px;
   }
+  .separator {
+    display: none;
+  }
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.about-section-head,
+.contact-section {
+  background: #006cb7;
+  color: #fff;
+}
+.about-section-head .image-container {
+  text-align: right;
+}
+.about-section-head .image-container img {
+  border-radius: 50%;
+  width: 75%;
+}
+.contact-section {
+  padding: 45px;
+}
+
+.contact-section .btn {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.section {
+  padding: 40px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.separator {
+  height: 50px;
+  border-right: 1px solid #000;
+  margin-top: 66px;
+}
+
+.list-unstyled span {
+  margin-left: 15px;
+  font-weight: 200;
+}
+
+.footer-image {
+  width: 180px;
 }
