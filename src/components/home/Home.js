@@ -121,27 +121,27 @@ const Home = () => {
         <Container className="d-flex flex-wrap justify-content-around mt-5">
           {/* 1px solid rgb(235, 235, 235) */}
           <div class="section">
-            <h2>Section 1</h2>
-            <p>This is the content of section 1.</p>
+            <h2 style={{ color: "rgb(0, 108, 183)" }}>70+</h2>
+            <p>Countries</p>
           </div>
 
           <div class="separator"></div>
 
           <div class="section">
-            <h2>Section 2</h2>
-            <p>This is the content of section 2.</p>
+            <h2 style={{ color: "rgb(0, 108, 183)" }}>120,000+</h2>
+            <p>Empolyees</p>
           </div>
 
           <div class="separator"></div>
 
           <div class="section">
-            <h2>Section 3</h2>
-            <p>This is the content of section 3.</p>
+            <h2 style={{ color: "rgb(0, 108, 183)" }}>240+</h2>
+            <p>Coustomers</p>
           </div>
         </Container>
       </section>
 
-      <section>
+      <section style={{ background: "rgb(225 243 255)", padding: "60px" }}>
         <Container>
           <ContactForm />
         </Container>
