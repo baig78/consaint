@@ -5,31 +5,59 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/consaint_site_logo.png";
 import { Link } from "react-router-dom";
-import { NavDropdown } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
 
   const services = [
-    "Administraion and Deployment",
-    "Staffing and Training",
-    "Cloud Solutions",
-    "Data Management",
-    "Business Intelligence",
-    "Data Science and Artificial Intelligence",
-    "Integration",
+    {
+      name: "Administraion and Deployment",
+      link: "/administraion-and-deployment",
+    },
+    { name: "Staffing and Training", link: "/staffing-and-training" },
+    { name: "Cloud Solutions", link: "/cloud-solutions" },
+    { name: "Data Management", link: "/data-management" },
+    { name: "Business Intelligence", link: "/business-intelligence" },
+    {
+      name: "Data Science and Artificial Intelligence",
+      link: "/data-science-and-artificial-intelligence",
+    },
+    {
+      name: "Integration",
+      link: "/integration",
+    },
   ];
   const Industries = [
-    "Banking and Capital Markets",
-    "Healthcare",
-    "Insurance",
-    "Life Sciences",
-    "Telecom",
+    {
+      name: "Banking and Capital Markets",
+      link: "/banking-and-capital-markets",
+    },
+    {
+      name: "Healthcare",
+      link: "/healthcare",
+    },
+    {
+      name: "Insurance",
+      link: "/insurance",
+    },
+    {
+      name: "Life Sciences",
+      link: "/life-sciences",
+    },
+    {
+      name: "Telecom",
+      link: "/telecom",
+    },
+    // "Banking and Capital Markets",
+    // "Healthcare",
+    // "Insurance",
+    // "Life Sciences",
+    // "Telecom",
   ];
 
   return (
-    <Navbar expand="lg" sticky="top" className="shadow p-3 mb-5 bg-body ">
+    <Navbar expand="lg" sticky="top" className="shadow p-3 bg-body ">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} className="site-logo" alt="consaint" />
@@ -45,18 +73,28 @@ const Header = () => {
             >
               <li>Home</li>
             </Link>
+            <Link to="#" className="nav-link">
+              <li>Services</li>
+              <ul title="Service" id="basic-nav-dropdown">
+                {services.map((service, index) => (
+                  <Link to={service.link} key={index}>
+                    {service.name}
+                  </Link>
+                ))}
+              </ul>
+            </Link>
 
-            <NavDropdown title="Service" id="basic-nav-dropdown">
-              {services.map((service, index) => (
-                <NavDropdown.Item key={index}>{service}</NavDropdown.Item>
-              ))}
-            </NavDropdown>
+            <Link to="#" className="nav-link">
+              <li>Industries</li>
+              <ul title="Service" id="basic-nav-dropdown">
+                {Industries.map((Industries, index) => (
+                  <Link to={Industries.link} key={index}>
+                    {Industries.name}
+                  </Link>
+                ))}
+              </ul>
+            </Link>
 
-            <NavDropdown title="Industries" id="basic-nav-dropdown">
-              {Industries.map((Industries, index) => (
-                <NavDropdown.Item key={index}>{Industries}</NavDropdown.Item>
-              ))}
-            </NavDropdown>
             <Link
               to="/carrier"
               className={`nav-link ${

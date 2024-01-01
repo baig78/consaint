@@ -102,3 +102,19 @@ img {
 .footer-image {
   width: 180px;
 }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
