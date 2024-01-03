@@ -6,43 +6,39 @@
   width: 210px;
 }
 
-/* Basic styling for the navigation */
 .nav-link {
   position: relative;
   list-style: none;
   display: inline-block;
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 20px;
 }
 
-/* Styling for the Services dropdown */
 #basic-nav-dropdown {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 1;
-  background-color: #fff; /* Adjust background color as needed */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  border-radius: 4px; /* Adjust as needed */
+  border-radius: 4px;
   width: 368px;
 }
 
-/* Styling for the Services list items */
 #basic-nav-dropdown a {
   display: block;
-  color: #333; /* Adjust text color as needed */
+  color: #333;
   text-decoration: none;
   padding: 8px 10px;
   transition: background-color 0.3s ease;
 }
 
 #basic-nav-dropdown a:hover {
-  background-color: #006cb7; /* Adjust hover background color as needed */
+  background-color: #006cb7;
   color: #fff;
 }
 
-/* Style the Services main list item */
 .nav-link:hover #basic-nav-dropdown {
   display: block;
 }

@@ -14,13 +14,17 @@ const AdministraionDeployment = () => {
         <div class="overlay-text">Administraion and Deployment</div>
       </div>
       <Container>
-        <p style={{ margin: "50px" }}>
-          Consaint’s are expertise in integrating solutions that automates the
-          process of integrating code changes and deploy them to higher
-          environments. Our experienced team enables design and development of
-          pipelines which automatically trigger build and running automated test
-          cases to ensure the stability and reliability of the application.
-        </p>
+        <div className="d-flex justify-content-around  my-5 text-area-c3">
+          <h3>Administraion and Deployment</h3>
+          <p>
+            Consaint’s are expertise in integrating solutions that automates the
+            process of integrating code changes and deploy them to higher
+            environments. Our experienced team enables design and development of
+            pipelines which automatically trigger build and running automated
+            test cases to ensure the stability and reliability of the
+            application.
+          </p>
+        </div>
       </Container>
     </>
   );
