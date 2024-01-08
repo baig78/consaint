@@ -22,14 +22,18 @@ const Home = () => {
         <section>
           <div className="hero-section">
             <div className="text-container">
-              <h1>Contrary to popular belief, Lorem Ipsum</h1>
+              <h1>OUR VISION</h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500.
+                To be the leading global provider of best of breed business
+                solutions, leveraging technology and delivered by best talest.
               </p>
-              <Button className="enqurebtn rounded-pill">Enquire Now</Button>
-              <Button className="contactbtn rounded-pill ">Contact Us</Button>
+
+              <Link to="/contact">
+                <Button className="enqurebtn rounded-pill">Enquire Now</Button>
+              </Link>
+              <Link to="/contact">
+                <Button className="contactbtn rounded-pill ">Read More</Button>
+              </Link>
             </div>
             <div className="image-container">
               <img src={HeroImage} alt="hero" />
@@ -46,15 +50,18 @@ const Home = () => {
         <Container>
           <div className="about-section">
             <div className="text-container">
-              <h1>Latin literature from 45 BC, making it</h1>
+              <h1>About Us</h1>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500 <br /> Lorem Ipsum is simply dummy text
-                of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever since the 1500.
+                Being a critical sector Consaint creates business value by
+                adopting and understanding client’s business needs to help
+                expertise and seize the change-driven across the banking and
+                finance in managing transactions, mitigating risks and ensuring
+                regulatory compliance using sophisticated technologies.
               </p>
-              <Button className="contactbtn rounded-pill ">Contact Us</Button>
+
+              <Link to="/company">
+                <Button className="contactbtn rounded-pill ">Read More</Button>
+              </Link>
             </div>
             <div className="image-container">
               <img src={aboutImage} alt="hero" />
@@ -69,10 +76,12 @@ const Home = () => {
           <Card style={{ width: "20rem" }}>
             <Card.Img variant="top" src={servicesImg1} />
             <Card.Body>
-              <Card.Title>Resources</Card.Title>
+              <Card.Title>Staffing and Training</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Consaint IT staffing involves understanding the unique
+                requirements of each project or position, matching the right
+                skill sets, and providing ongoing support to ensure optimal
+                performance.
               </Card.Text>
               <Link to="/service">Read more</Link>
             </Card.Body>
@@ -80,10 +89,12 @@ const Home = () => {
           <Card style={{ width: "20rem" }}>
             <Card.Img variant="top" src={servicesImg2} />
             <Card.Body>
-              <Card.Title>Our Services</Card.Title>
+              <Card.Title>Cloud Solutions</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Leveraging cloud services allows businesses to reduce capital
+                expenses associated with traditional on-premises infrastructure,
+                promoting cost-efficiency and flexibility in resource
+                allocation.
               </Card.Text>
               <Link to="/service">Read more</Link>
             </Card.Body>
@@ -91,10 +102,12 @@ const Home = () => {
           <Card style={{ width: "20rem" }}>
             <Card.Img variant="top" src={servicesImg3} />
             <Card.Body>
-              <Card.Title>Lorem text</Card.Title>
+              <Card.Title>Data Management</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Data management tools play a critical role in data governance,
+                enabling organizations to define policies, enforce standards,
+                and maintain a centralized repository for authoritative and
+                accurate data.
               </Card.Text>
               <Link to="/service">Read more</Link>
             </Card.Body>

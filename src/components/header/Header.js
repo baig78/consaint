@@ -24,6 +24,14 @@ const Header = () => {
       link: "/data-science-and-artificial-intelligence",
     },
     {
+      name: "Business Process Management",
+      link: "/business-process-management",
+    },
+    {
+      name: "Customer Relationship Management",
+      link: "/customer-relationship-management",
+    },
+    {
       name: "Integration",
       link: "/integration",
     },
@@ -49,11 +57,6 @@ const Header = () => {
       name: "Telecom",
       link: "/telecom",
     },
-    // "Banking and Capital Markets",
-    // "Healthcare",
-    // "Insurance",
-    // "Life Sciences",
-    // "Telecom",
   ];
 
   return (

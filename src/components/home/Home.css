@@ -51,6 +51,10 @@ img {
   .separator {
     display: none;
   }
+  .overlay-text {
+    font-weight: 700;
+    font-size: 21px;
+  }
 }
 
 .about-section {

@@ -23,6 +23,8 @@ import Healthcare from "./components/pages/healthcare/Healthcare";
 import Insurance from "./components/pages/insurance/Insurance";
 import LifeSciences from "./components/pages/lifeSciences/LifeSciences";
 import Telecom from "./components/pages/telecom/Telecom";
+import BusinessProcessManagement from "./components/pages/businessProcessManagement/BusinessProcessManagement";
+import CustomerRelationshipManagement from "./components/pages/customerRelationshipManagement/CustomerRelationshipManagement";
 
 function App() {
   return (
@@ -51,6 +53,14 @@ function App() {
           <Route
             path="/data-science-and-artificial-intelligence"
             component={DataScienceArtificialIntelligence}
+          />
+          <Route
+            path="/business-process-management"
+            component={BusinessProcessManagement}
+          />
+          <Route
+            path="/customer-relationship-management"
+            component={CustomerRelationshipManagement}
           />
           <Route path="/integration" component={Integration} />
           <Route
