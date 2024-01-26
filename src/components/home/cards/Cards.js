@@ -6,20 +6,20 @@ import { Link } from "react-router-dom";
 const Cards = () => {
   const cardsData = [
     {
-      title: "Healthcare",
-      text: "Consaint creates business value by adopting rapid change in the health care industry. We understand our client, business needs and clinical process to help expertise and seize the change",
+      title: "Administration & Development",
+      text: "Consaint’s are expertise in integrating solutions that automates the process of...",
       iconClass: "far fa-snowflake",
       linkTo: "/healthcare",
     },
     {
-      title: "Insurance",
-      text: "Consaint creates business value by adopting the change in the insurance industry. We understand our client, business needs to help expertise and seize the change-driven across the insurance value chain",
+      title: "Staffing And Training",
+      text: "Consaint IT staffing involves understanding the unique requirements of each project...",
       iconClass: "fas fa-university",
       linkTo: "/insurance",
     },
     {
-      title: "Life Sciences",
-      text: "Consaint provides life science organizations to go beyond process optimization for the future bold vision to design and implement enterprise wide, scalable, sustainable transformations to meet unique needs.",
+      title: "Cloud Solutions",
+      text: "Leveraging cloud services allows businesses to reduce capital expenses associated with...",
       iconClass: "fas fa-tools",
       linkTo: "/life-sciences",
     },
